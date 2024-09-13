@@ -17,20 +17,7 @@ const Navbar = ({ responseMessage })  => {
         <div class="container-fluid  ">
           <a class="navbar-brand ms-auto" href="#">
             <img src={Logo} alt="Logo" width={80} height={80} class="logo rounded-5 border-4 me-2" />
-            <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" onClick={handleDropdown}>
-              <i class="fas fa-caret-down"></i>
-            </button>
-            <ul class={`dropdown-menu ${showDropdown ? 'show' : ''}`}>
-              <li>
-                {responseMessage === "Success" ? (
-                  <span class="text-success">Succès!</span>
-                ) : responseMessage === "Error" ? (
-                  <span class="text-danger">Erreur!</span>
-                ) : null}
-              </li>
-            </ul>
-          </div>
+            
             
           </a>
 
